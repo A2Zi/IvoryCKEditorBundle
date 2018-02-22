@@ -343,7 +343,7 @@ class CKEditorRenderer implements CKEditorRendererInterface
      */
     private function getAssets()
     {
-        return $this->container->get('assets.packages', ContainerInterface::NULL_ON_INVALID_REFERENCE);
+        return $this->container->get('assets.packages_public', ContainerInterface::NULL_ON_INVALID_REFERENCE);
     }
 
     /**
@@ -354,3 +354,4 @@ class CKEditorRenderer implements CKEditorRendererInterface
         return $this->container->get('router');
     }
 }
+
